@@ -7,13 +7,13 @@ canvas.height = canvas.scrollHeight;
 //text
 ctx.font = 'bold 25pt Times new roman';
 ctx.fillStyle = '#00264D';
-ctx.fillText('Grafika Komputer', 500, 40);
+ctx.fillText('Grafika Komputer', canvas.width/2-120, 40);
 ctx.font = 'bold 20pt Times new roman';
 ctx.fillStyle = '#02386E';
-ctx.fillText('Gerakan Gelas Terbuka dan Tertutup', 450, 80);
-ctx.font = '20pt Times new roman';
+ctx.fillText('Gerakan Tutup Toples Terbuka dan Tertutup', canvas.width/2-260, 80);
+ctx.font = '10pt Times new roman';
 ctx.fillStyle = '#00498D';
-ctx.fillText('Hurin In Dinnar Saputri 361855401099, Merlin Dwi Arizka 361855401106, Annisa Nur Indayani 361855401107', 80, 120);
+ctx.fillText('Hurin In Dinnar Saputri 361855401099, Merlin Dwi Arizka 361855401106, Annisa Nur Indayani 361855401107', canvas.width/2-300, 120);
 
 //bawah1
 ctx.rect(60, 265, 100, 150);
@@ -91,3 +91,18 @@ ctx.fillRect(370, 235, 10, 10);
 ctx.strokeStyle = "black";
 ctx.lineWidth = 1;
 ctx.strokeRect(370, 235, 10, 10);
+
+let imageObj=new Image();
+imageObj.addEventListener('load',function(){
+    ctx.drawImage(imageObj,-770,430,200,200);
+    ctx.drawImage(imageObj,-580,430,200,200);
+    ctx.drawImage(imageObj,-392,430,200,200);
+},false);
+imageObj.src='kerupuk.png';
+
+ctx.font = '13pt Berlin Sans FB Demi';
+ctx.fillStyle = 'red';
+ctx.rotate(-Math.PI/2);
+ctx.fillText('DOA IBU', -704, 450);
+ctx.fillText('DOA IBU', -514, 450);
+ctx.fillText('DOA IBU', -328, 450);
