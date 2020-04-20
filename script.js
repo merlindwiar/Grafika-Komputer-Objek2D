@@ -5,12 +5,14 @@ canvas.width = canvas.scrollWidth;
 canvas.height = canvas.scrollHeight;
 
 //text
-ctx.font = '25pt Times new roman';
-ctx.fillStyle = '#000035';
+ctx.font = 'bold 25pt Times new roman';
+ctx.fillStyle = '#00264D';
 ctx.fillText('Grafika Komputer', 500, 40);
-ctx.font = '20pt Times new roman';
-ctx.fillStyle = '#000035';
+ctx.font = 'bold 20pt Times new roman';
+ctx.fillStyle = '#02386E';
 ctx.fillText('Gerakan Gelas Terbuka dan Tertutup', 450, 80);
+ctx.font = '20pt Times new roman';
+ctx.fillStyle = '#00498D';
 ctx.fillText('Hurin In Dinnar Saputri 361855401099, Merlin Dwi Arizka 361855401106, Annisa Nur Indayani 361855401107', 80, 120);
 
 //bawah1
